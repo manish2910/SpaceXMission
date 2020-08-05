@@ -69,7 +69,7 @@ function App({ data }) {
   )
 }
   
-App.getInitialProps = async () => {
+App.getInitialProps = async (ctx) => {
     const response = await fetch(`https://api.spaceXdata.com/v3/launches?limit=100`)
     const data = await response.json();
     return { data }
