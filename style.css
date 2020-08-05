@@ -1,0 +1,176 @@
+body {
+    background-color: #f2f2f2;
+  }
+  
+  .heading{
+    padding: 5px 10px 0px ;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .filter{
+    background-color: white;
+    padding: 11px;
+    border-radius: 5px;
+    margin: 10px;
+    height: max-content;
+  }
+  
+  .filter div:first-child{
+    font-weight: 700;
+  }
+
+  .button_color{
+    color:black;
+    background-color:rgba(4, 148, 4, 0.295);
+    border-radius:5px;
+    border:none;
+    padding: 2px 10px;
+    margin: 5px;
+    width: 48px;
+    outline: none;
+  }
+
+  .active{
+    color:black;
+    background-color:rgba(2, 66, 2, 0.651);
+  }
+  
+  .result{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .result div:nth-child(1){
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  .result div:nth-child(2){
+    font-weight: 700;
+    color: rgb(8, 62, 124);
+    margin-bottom: 10px;
+  }
+  
+  .result ul{
+    margin: 0 0 5px 0;
+  }
+  
+  .result div:nth-child(5), .result div:nth-child(6), .result div:nth-child(7){
+    margin-bottom: 10px;
+  
+  }
+  
+  .result div:nth-child(3), .result div:nth-child(5) span, .result div:nth-child(6) span, .result div:nth-child(7) span{
+    font-weight: 700;
+  }
+  
+  .fixed_footer{
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    font-size: large;
+  }
+  
+  .filter div:nth-child(2), .launch_success, .land_success{
+    border-bottom: 1.5px solid #dfdfdf;
+    width: 116px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .launch_year{
+    width: 116px;
+    margin: 10px auto;
+  }
+  
+  .launch_successfull, .land_successfull , .launch_year{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .image{
+    width: 100%;
+    max-width: 290px;
+  }
+  
+  @media (min-width:700px) and (max-width:1023.98px){
+    .App{
+      display: flex;
+    }
+
+    .parent_result{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .filter{
+      width: 150px
+    }
+  
+    .result{
+      width: 26.5vw;
+    }
+  }
+  
+  @media (min-width:1024px) and (max-width:1439.98px){
+    .App{
+      display: flex;
+    }
+
+    .parent_result{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .image{
+      width: 70%;
+    }
+
+    .filter{
+      min-width: 173px
+    }
+
+    .result{
+      width: 13.5vw;
+    }
+  }
+
+  @media (min-width:1440px){
+    body{
+      margin: 0 auto;
+      max-width: 1440px;
+    }
+    
+    .App{
+      display: flex;
+    }
+
+    .parent_result{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .filter{
+      min-width: 250px
+    }
+
+    .image{
+      width: 70%;
+    }
+
+    .result{
+      width: 13.5vw;
+    }
+  }
+ 
